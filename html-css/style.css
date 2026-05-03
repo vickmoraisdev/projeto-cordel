@@ -15,26 +15,28 @@
 header{
     background-color: black;
     color: white;
-    height: 17.50rem;
+    max-height: 17.50rem;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 4.38rem;
 }
 
 header h1{
-    margin-bottom: 10px;
-    font-size: 130px;
+    margin-bottom: 0.63rem;
+    font-size: clamp(3rem, 8vw, 8rem);
     font-family: var(--fonte-titulo);
+    font-variant: small-caps;
 }
 
 header h1:hover{
     text-decoration: underline;
 }
 
-header p, a{
-    font-size: 17px;
+header p, header a{
+    font-size: 1.06rem;
     font-family: var(--fonte-subtitulo);
     text-decoration: none;
     color: white;
+    padding-bottom: 3rem;
 }
 
 header a{
@@ -46,5 +48,72 @@ a:hover{
 }
 
 main p{
-    font-size: 51px;
+    font-size: 3.19rem;
+    font-family: var(--fonte-principal);
+    margin-top: 3.75rem;
+    margin-left: 1.88rem;
+}
+
+@media (max-width: 600px){
+    header h1{
+        font-size: 3rem;
+    }
+
+    main p{
+        font-size: 1.5rem;
+    }
+}
+
+.com-fundo1{
+    background-image: url(../imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 50rem;
+    box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.28);
+    padding-top: 1.56rem;
+    margin-top: 9.38rem;
+}
+
+.com-fundo1 p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.473);
+    max-width: 700px;
+    width: 90%;
+    padding-left: 5px;
+}
+
+.com-fundo2{
+    background-image: url(../imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 150px;
+    padding-top: 5px;
+    height: 780px;
+}
+
+.com-fundo2 p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.432);
+    max-width: 620px;
+    width: 90%;
+    padding-left: 5px;
+    text-shadow: 1px 1px black;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-subtitulo);
+    padding: 15px;
+    text-align: center;
+    margin-top: 160px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
 }
