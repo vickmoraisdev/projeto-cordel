@@ -65,7 +65,7 @@ main p{
 }
 
 .com-fundo1{
-    background-image: url(../imagens/background001.jpg);
+    background-image: url(imagens/background001.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -85,7 +85,7 @@ main p{
 }
 
 .com-fundo2{
-    background-image: url(../imagens/background002.jpg);
+    background-image: url(imagens/background002.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
